@@ -14,6 +14,10 @@ password1 = raw_input("Please provide the password to
 connect:\t")
 password = "cisco"
 
+##Create a class that sets the ip address in a way to allow all functions in the class to use it.
+##The Constructor should connect via SSH and access the running configuration.
+##Parameters need to focus on providing an output of the session.     
+                      
 class REPLACE():
      def __init__(self, ipaddr):
           self.ipaddr = ipaddr
@@ -39,6 +43,9 @@ class REPLACE():
           self.output = output
           self.conn = remote_conn
           
+##Create that replaces the output from the function and replace the ip address 192.168.12.1
+##to 10.10.100.1.    
+                      
 def Replace_IP(self):
       time.sleep (2)
       f = open(self.DIR, "w")
